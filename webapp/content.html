@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Summary</title> 
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link href="log.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <header>
+        <h1>Summarizer</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="content.html">Summary</a></li>
+                <li><a href="textsummary.html">Text Summarixation</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li style="padding-right:5em"><a href="contact.html">Contact</a></li>
+                <a href="login.html" style="display-inline" class="button">Login</a>
+                </ul>
+                
+        </nav>
+    </header>
+    <h1>Contents</h1>
+    <h3 style="color:white; text-align:left">Text summarization in NLP is the process of summarizing the information in large texts for quicker consumption.</h3>
+<ol>
+    <h3 style="color:#03e9f4; text-align:left"><li>Introduction</li></h3>
+    <p style="text-align:left">&nbsp;Would you like to read long and boring paragraphs when you visit new websites? Clearly, the answer is no! We make every effort to save our valuable time. We must be able to get to the point quickly when reading.We prefer short summaries that are informative and give you a quick overview.
+    </p>
+    <h3 style="color:#03e9f4; text-align:left" ><li>Types of Text Summarization</li></h3>
+    <p style="text-align:left">&nbsp;There are two types of text summarization methods: Methods for extracting and abstracting.</p>
+    <h4><p style="color:#03e9f4; text-align:left">Types of Text summarization:</p></h4>
+    <ul>
+        <li style="color:#03e9f4; text-align:left">Extractive Text Summarization:</li>
+        <p style="text-align:left; text-align:left">It is the conventional form that was first developed. The primary objective is to recognize and include the text's significant sentences in the summary. It is important to note that the obtained summary contains exact sentences from the original text.
+        </p>
+        <li style="color:#03e9f4; text-align:left">Abstractive Text Summarization:</li>
+        <p style="text-align:left">It is a more advanced method, with numerous advancements being made on a regular basis (I will cover some of the best here). The strategy is to identify the key sections, interpret the context, and then recreate in a new way. This ensures that the most important information is communicated in the shortest amount of text possible. It is important to note that the sentences in the summary are generated rather than extracted from the original text.</p>
+    </ul>
+    <h3 style="color:#03e9f4; text-align:left"><li>Extractive Abstractive</li></h3></br>  
+    <ul>
+    <li style="color:#03e9f4; text-align:left">Lexrank:</li>
+    <p style="text-align:left">LexRank is a graph-based unsupervised approach to automatic text summarization. The graph method is used for sentence scoring. LexRank is used to compute sentence importance using the concept of eigenvector centrality in a sentence graph representation.
+    </p>
+    <h4 style="color:#03e9f4;text-align:left">PROCESS</h4>
+    <img src="https://iq.opengenus.org/content/images/2019/11/up1-1.png" alt="Lexrank"><br><br>
+    <li style="color:#03e9f4; text-align:left">LSA (Latent Semantic Analysis )</li>
+    <p style="text-align:left">Latent Semantic Analysis (LSA), also known as Latent Semantic Indexing (LSI), is the process of analysing documents to determine their underlying meaning or concepts. If each word only meant one concept and each concept was only described by one word, LSA would be simple because there is a simple mapping from words to concepts.
+    </p>
+    <h4 style="color:#03e9f4; text-align:left">PROCESS</h4>
+    <img src="https://iq.opengenus.org/content/images/2019/10/LSA-processing-1.png"alt="LSA"><br><br>
+    <li style="color:#03e9f4; text-align:left">Luhn</li>
+    <p style="text-align:left">Lehn algorithm is a simple checksum formula that is used to validate a wide range of identification numbers, including credit card numbers, IMEI numbers, National Provider Identifier numbers in the United States, Canadian Social Insurance Numbers, and so on.
+    </p>
+    <h4 style="color:#03e9f4; text-align:left">PROCESS</h4>
+    <img src="https://iq.opengenus.org/content/images/2019/10/Untitled111.png" alt="Luhn"><br><br>
+    <li style="color:#03e9f4; text-align:left"> KL-Sum</li>
+    <p style="text-align:left">The KL sum algorithm seeks a set of sentences with lengths less than L words and unigram distributions as close to the source document as possible.
+        Unigram distribution - A contiguous sequence of n items from a given sample of speech or text is referred to as a unigram or n-gram in the field of computational linguistics and probability.</p>
+    <h4 style="color:#03e9f4; text-align:left">PROCESS</h4>
+    <img src="https://iq.opengenus.org/content/images/2019/10/kldiv.png" alt="kl-sum"><br><br>
+    </ul>
+    <h3 style="color:#03e9f4"><li>Abstractive Textsummarization</li></h3>
+    <ul>
+        <li style="color:#03e9f4; text-align:left">T5 Transformers for Text Summarization</li>
+        <p style="text-align:left">The model T5 (Text-to-Text Transfer Transformer). The same model is applied to a wide range of tasks by treating all tasks uniformly as taking some input text and producing some text in which the task type is embedded as descriptors in the input.</p>
+        <li style="color:#03e9f4; text-align:left"> BART Transformers for Text Summarization</li>
+        <p style="text-align:left">BART is a denoising autoencoder for pretraining sequence-to-sequence models. It is trained by corrupting text with an arbitrary noising function, and learning a model to reconstruct the original text. It uses a standard Transformer-based neural machine translation architecture. It uses a standard seq2seq/NMT architecture with a bidirectional encoder (like BERT) and a left-to-right decoder (like GPT). This means the encoder's attention mask is fully visible, like BERT, and the decoder's attention mask is causal, like GPT2.</p>
+        <h4 style="color:#03e9f4;text-align:left">PROCESS</h4>
+        <img src="https://dezyre.gumlet.io/images/blog/transformers-bart-model-explained/image_55116624341642833003956.png?w=640&dpr=1.3" alt="bart"><br><br>
+        <br><br>
+        <li style="color:#03e9f4; text-align:left">BERT</li>
+        <p style="text-align:left">BERT, which stands for Bidirectional Encoder Representations from Transformers, is based on Transformers, a deep learning model in which every output element is connected to every input element, and the weightings between them are dynamically calculated based upon their connection. (In NLP, this process is called attention.)</p>
+        <h4 style="color:#03e9f4; text-align:left">PROCESS</h4>
+        <img src="https://jalammar.github.io/images/BERT-classification-spam.png" alt="bert"><br><br>
+        <li style="color:#03e9f4; text-align:left">GPT-2 Summarization</li>
+        <p style="text-align:left">GPT2 uses Byte Pair Encoding to create the tokens in its vocabulary. This means the tokens are usually parts of words. GPT-2 was trained with the goal of causal language modeling (CLM) and is thus capable of predicting the next token in a sequence.</p>
+        <h4 style="color:#03e9f4; text-align:left">PROCESS</h4>
+        <img src="https://i.ibb.co/v4608Dd/pochetti-1.png" alt="GPT-2"><br><br>
+    </ul>
+</ol>
+</body>
+</html>

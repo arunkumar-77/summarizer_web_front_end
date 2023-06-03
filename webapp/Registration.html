@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+    <link href="log.css" rel="stylesheet" type="text/css">
+    <link href="styles.css" rel="stylesheet" type="text/css">
+  </head>
+<body>
+ <header>
+        <h1>Summarizer</h1>
+        <nav>         
+        </nav>
+    </header>
+<div class="login-box">
+  <h2 style = "font-weight:900;font-family:cambria"><b>Register Here</b></h2>
+  <form method="post" action="reg.php">
+    <div class="user-box">
+      <input type="email" name="email" required="">
+      <label>Email</label>
+    </div>
+    <div class="user-box">
+      <input type="password" name="password" required="">
+      <label>Password</label>
+    </div>
+    <div class="user-box">
+      <input type="password" name="password1" required="">
+      <label>Confirm Password</label>
+    </div>
+    <div class="user-box">
+      <div>
+        <input name="text" required="">
+        <label>Captcha</label>
+        <canvas id="captcha" style="text-align: right;">captcha text</canvas>
+          </div>
+          <span id="output"></span>
+        </div>
+        <script src="script.js"></script>        
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <button id="submit" type="submit">SUBMIT</button>
+    <pre><a href="login.html"  style = "text-decoration: none">Already have an Account?</a></pre>
+  </form>
+</div>
+  </body>

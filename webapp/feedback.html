@@ -1,0 +1,182 @@
+<!docstype html>
+<Html>  
+<head> 
+<link href="log.css" rel="stylesheet" type="text/css"> 
+<script src=
+"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+<title>Feedback</title>
+<style>
+
+label{
+color:white;
+font-size:20px;
+font-weight:600;
+width: 150px;
+display: inline-block;
+margin-left: 40px;
+}
+.submit-btn {
+background-color:cyan;  
+width: 10%;
+color: black; 
+padding: 15px;  
+font-size:20px;
+align:center;
+margin: 8px 0px;  
+border: none;
+border-radius: 25px;  
+}
+
+.olist{
+color:white;
+}
+
+.lis{
+font-size:20px;
+font-weight:600;
+}
+
+textarea{
+border-bottom: 1px solid #000000;
+padding: 6px;
+font-weight:400;
+font-size: 14px;
+}
+
+input{
+padding: 6px;
+font-size: 14px;
+
+}
+
+
+select{
+padding: 6px;
+font-size: 14px;
+}
+
+</style>
+</head>  
+<body style="background-color:#243b55"> 
+<header>
+        <h1>Summarizer</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="content.html">Summary</a></li>
+                <li><a href="textsummary.html">Text Summarixation</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li style="padding-right:5em"><a href="contact.html">Contact</a></li>
+                <a href="login.html" style="display-inline" class="button">Login</a>
+            </ul>
+                
+        </nav>
+    </header> 
+<h1 style="font-family:cursive;font-size:60px;color:cyan" align="middle">  
+Feedback Form
+</h1>  </center>
+<br>  
+<br> 
+ 
+<form method="post" action="feed.php">  
+ 
+<label> Firstname:  </label>        
+<input type="text" name="firstname" id="name" size="50" height="48" align="middle"> <br> <br>  
+<label> Middlename: </label>    
+<input type="text" name="middlename" size="50" height="48" align="middle"> <br> <br>  
+<label> Lastname: </label>        
+<input type="text" name="lastname" size="50" height="48" align="middle"> <br> <br>  
+ 
+<label>  
+Age :  
+</label>  
+<select name="age">  
+<option value="Course">--select--</option>  
+<option value="8-18">8-18</option>  
+<option value="18-25">18-25</option>  
+<option value="a5 and above">25 and above</option>  
+ 
+</select>  
+  
+<br>  
+<br>  
+ 
+<label>  
+Phone :  
+</label>  
+<input type="text" name="country code"  value="+91" size="2" >  
+<input type="text" name="phone" size="10" style="width:240px" align="middle"> <br> <br>  
+
+<label>
+Email:
+</label>   
+<input type="email" id="email" name="email" size="50" height="48" align="middle">
+
+<br>  
+<br>
+  
+<ol class="olist">
+<li class="lis">
+Gender:
+</li><br> 
+<input type="radio" class="radio-inline" name="Gender" size="200" value="m" id="Male" height="48" align="middle"> Male <br>  
+<input type="radio" class="radio-inline" name="Gender" size="200" value="f" id="Female" height="48" align="middle"> Female <br>  
+<input type="radio" class="radio-inline" name="Gender" size="200" value="o" id="Others" height="48" align="middle"> Other 
+ 
+<br> <br>  
+
+
+<li class="lis">
+Was our app useful?
+</li><br>  
+<input type="radio" class="radio-inline" value="yes" name="useful"/> yes <br>  
+<input type="radio"class="radio-inline"  value="no" name="useful"/> no <br>  
+<input type="radio"class="radio-inline"  value="sometimes" name="useful"/> sometimes  
+<br>  
+<br>
+
+<li class="lis">
+Was our application easy to use and sharable?
+</li><br>  
+<input type="radio" class="radio-inline" value="yes" name="application"/> yes <br>  
+<input type="radio" class="radio-inline" value="no" name="application"/> no <br>  
+<input type="radio" class="radio-inline" value="sometimes" name="application"/> sometimes  
+<br>  
+<br>
+
+<li class="lis">
+What are the issues you faced while working with our app?
+</li ><br>  
+<input type="checkbox" class="radio-inline" value="Not user friendly" name="issues"/> Not user friendly <br>  
+<input type="checkbox" class="radio-inline" value="User interface" name="issues"/> User interface <br>  
+<input type="checkbox" class="radio-inline" value="face glitches" name="issues"/> face glitches <br>
+<input type="checkbox" class="radio-inline" value="app not responsive" name="issues"/> app not responsive
+<br>  
+<br>
+
+<li class="lis">
+Was the app in a presentable manner?
+</li><br>  
+<input type="radio" class="radio-inline"  value="yes" name="present"/> yes <br>  
+<input type="radio" class="radio-inline" value="no" name="present"/> no
+<br>  
+<br>
+
+<li class="lis">
+Please write down any suggestions to improvise the app.
+</li><br>  
+<input type="text" name="comments" size="50" style="height:100px" align="middle"/> <br>  
+ <br>
+<div>
+    <button id="submit" type="submit" class="submit-btn">Submit</button>
+    </div>
+
+<br>  
+<br>
+</ol>
+</form>
+</body>
+</html>  
+

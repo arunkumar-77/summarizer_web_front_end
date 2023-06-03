@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <title>Summary</title>
+    <link href="log.css" rel="stylesheet" type="text/css">
+    <style>
+        .square {
+  height: 350px;
+  width: 350px;
+  position: relative;
+  background-color: transparent;
+
+}
+
+        .child{
+            border: 3px solid white;
+            float:center;
+            margin:auto;
+        }
+        @media (min-width: 768px){
+        .parent{
+            display:flex;
+        }
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Summarizer</h1>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="content.html">Summary</a></li>
+                <li><a href="textsummary.html">Text Summarixation</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li style="padding-right:5em"><a href="contact.html">Contact</a></li>
+                <a href="login.html" style="display-inline" class="button">Login</a>
+                </ul>
+        </nav>
+    </header>
+    <h1>Summarizer tool</h1>
+
+    <section class="parent">
+          
+    <section class="child">
+        <textarea id="Message" name="Message" style="background-color:transparent;color:white;position: relative;" required></textarea><br><br>
+        <div class="square"></div>
+    </section>
+    <section class="child">
+        <textarea id="Message" name="Message" style="background-color:transparent;color:white;position: relative;" required></textarea><br><br>
+        <div class="square"></div>
+    </section>
+    </section>
+    <form action="/action_page.php">
+        <br><br>
+        <input type="file" id="myFile" name="filename">
+        <input type="submit">
+      </form>
+</body>
+</html>
