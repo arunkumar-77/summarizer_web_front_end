@@ -1,11 +1,7 @@
 # summarizer_web_front_end
 
 
-it is a notes summarizer web app
-
-it can be the frontend of the summarizer
-
-it is include login page,about us,register page etc..
+The Summarizer Tool's front-end features a Home Page outlining its benefits, a Login and Registration Page for secure access, and an About Us Page detailing its purpose. The core Summarization Page processes text, generating concise summaries, and a Feedback Page gathers user input. Additionally, a Contact Page facilitates communication. This thoughtfully designed interface ensures a user-friendly, informative, and interactive experience.
 
 it can be work on the xampp server.
 
